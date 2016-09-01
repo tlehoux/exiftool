@@ -1,0 +1,12 @@
+---
+- name: check for checksum
+  fail:
+    msg: >
+      There is no sha1 checksum defined for version {{ exiftool_version }} in
+      vars/main.yml. Set exiftool_checksum manually or submit a PR to add this
+      version.
+  when:
+    - ansible_version.major >= 2
+    - exiftool_verify_checksum|bool
+    - exiftool_checksum is not defined
+    - exiftool_version not in exiftool_checksums

@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Thomas Lehoux
+  description: Role to install ExifTool.
+  license: BSD
+  min_ansible_version: 2.0
+  platforms:
+    - name: CentOS
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: RedHat
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - system
+    - image
+    - application
+
+  dependencies: []
