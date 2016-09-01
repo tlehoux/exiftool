@@ -1,4 +1,4 @@
-Role Name
+ExifTool
 =========
 
 This is an Ansible role to install ExifTool (http://www.sno.phy.queensu.ca/~phil/exiftool/)
