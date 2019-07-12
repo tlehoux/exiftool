@@ -1,37 +1,37 @@
 ---
 # tasks file for tlehoux.exiftool
- - name: test if exiftool is already installed
-   register: out
-   shell: which exiftool
-   ignore_errors: yes
+- name: test if exiftool is already installed
+  register: out
+  shell: which exiftool
+  ignore_errors: yes
 
- - block:
-    - name: set exiftool checksum
-      set_fact:
-       exiftool_checksum: "sha1:{{ exiftool_checksums[exiftool_version] }}"
-      when:
-       - exiftool_verify_checksum|bool
-       - exiftool_checksum is not defined
-       - exiftool_version in exiftool_checksums
-       - ansible_version.major >= 2
+- block:
+  - name: set exiftool checksum
+    set_fact:
+      exiftool_checksum: "sha1:{{ exiftool_checksums[exiftool_version] }}"
+    when:
+      - exiftool_verify_checksum|bool
+      - exiftool_checksum is not defined
+      - exiftool_version in exiftool_checksums
+      - ansible_version.major >= 2
 
-    - name: download exiftool archive
-      get_url:
-        url: http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-{{ exiftool_version }}.tar.gz
-        dest: /tmp
-        checksum: "{{ exiftool_checksum|default(omit) }}"
+  - name: download exiftool archive
+    get_url:
+      url: http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-{{ exiftool_version }}.tar.gz
+      dest: /tmp
+      checksum: "{{ exiftool_checksum|default(omit) }}"
 
-    - name: unarchive exiftool archive
-      unarchive: src=/tmp/Image-ExifTool-{{ exiftool_version }}.tar.gz dest=/tmp copy=no
+  - name: unarchive exiftool archive
+    unarchive: src=/tmp/Image-ExifTool-{{ exiftool_version }}.tar.gz dest=/tmp copy=no
 
-    - name: install exiftool
-      shell: perl Makefile.PL && make test && make install chdir=/tmp/Image-ExifTool-{{ exiftool_version }}/
-      become: true
+  - name: install exiftool
+    shell: perl Makefile.PL && make test && make install chdir=/tmp/Image-ExifTool-{{ exiftool_version }}/
+    become: true
 
-    - name: remove tmp files
-      file: path=/tmp/Image-ExifTool-{{ exiftool_version }}{{item}} state=absent recurse=no
-      with_items:
-          -
-          - .tar.gz
-      become: true
-   when: out.rc==1
+  - name: remove tmp files
+    file: path=/tmp/Image-ExifTool-{{ exiftool_version }}{{item}} state=absent recurse=no
+    with_items:
+        -
+        - .tar.gz
+    become: true
+  when: out.rc==1
