@@ -1,6 +1,6 @@
 ---
 # defaults file for tlehoux.exiftool
-exiftool_version: 11.50
+exiftool_version: "11.50"
 exiftool_binary_name: Image-ExifTool-{{ exiftool_version }}
 exiftool_download_url: http://www.sno.phy.queensu.ca/~phil/exiftool/{{ exiftool_binary_name }}.tar.gz
 exiftool_verify_checksum: false
