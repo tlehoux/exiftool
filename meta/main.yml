@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Thomas Lehoux
   description: Role to install ExifTool.
