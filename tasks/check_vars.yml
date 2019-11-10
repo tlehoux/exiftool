@@ -2,7 +2,7 @@
 - name: check for checksum
   fail:
     msg: >
-      There is no sha1 checksum defined for version {{ exiftool_version }} in
+      There is no sha256 checksum defined for version {{ exiftool_version }} in
       vars/main.yml. Set exiftool_checksum manually or submit a PR to add this
       version.
   when:
