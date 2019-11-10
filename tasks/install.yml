@@ -1,5 +1,5 @@
 ---
-# tasks file for tlehoux.exiftool
+# tasks file for danielhoherd.exiftool
 - name: test if exiftool is already installed
   register: out
   command: which exiftool

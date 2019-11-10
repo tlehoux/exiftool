@@ -1,6 +1,6 @@
 # ExifTool
 
-[![Ansible Role](https://img.shields.io/ansible/role/11829.svg?maxAge=2592000)](https://galaxy.ansible.com/tlehoux/exiftool/)
+[![Ansible Role](https://img.shields.io/ansible/role/11829.svg?maxAge=2592000)](https://galaxy.ansible.com/danielhoherd/exiftool/)
 
 This is an Ansible role to install ExifTool (http://www.sno.phy.queensu.ca/~phil/exiftool/)
 
@@ -23,7 +23,7 @@ None.
 
     - hosts: servers
       roles:
-         - { role: tlehoux.exiftool }
+         - { role: danielhoherd.exiftool }
 
 # License
 
