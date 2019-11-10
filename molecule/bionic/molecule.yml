@@ -1,0 +1,30 @@
+---
+scenario:
+  name: bionic
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: instance
+    image: ubuntu:xenial
+provisioner:
+  name: ansible
+  inventory:
+    host_vars:
+      instance:
+        ansible_user: root
+  config_options:
+    defaults:
+      stdout_callback: yaml
+      callback_whitelist: profile_roles, profile_tasks
+  lint:
+    name: ansible-lint
+verifier:
+  name: testinfra
+  options:
+    s: yes
+  lint:
+    name: flake8

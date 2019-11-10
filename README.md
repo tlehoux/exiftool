@@ -29,9 +29,10 @@ None.
 
 BSD
 
-# Author Information
+# Authors
 
-Thomas Lehoux
+- Thomas Lehoux
+- Daniel Hoherd
 
 # Links
 

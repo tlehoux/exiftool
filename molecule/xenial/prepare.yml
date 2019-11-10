@@ -1,0 +1,10 @@
+---
+- name: Pre-step
+  hosts: all
+  tasks:
+    - name: "Install required packages"
+      apt:
+        name:
+          - perl-modules
+          - make
+        state: present
