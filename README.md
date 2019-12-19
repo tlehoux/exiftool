@@ -1,6 +1,6 @@
 # ExifTool
 
-[![Ansible Role](https://img.shields.io/ansible/role/11829.svg?maxAge=2592000)](https://galaxy.ansible.com/danielhoherd/exiftool/)
+<https://galaxy.ansible.com/danielhoherd/exiftool/>
 
 This is an Ansible role to install ExifTool (http://www.sno.phy.queensu.ca/~phil/exiftool/)
 
@@ -10,10 +10,10 @@ Ansible 2.x
 
 # Role Variables
 
-|            Variable            | Description | Default |
-| ------------------------------ | ----------- | ------- |
-| ```exiftool_version```         |             | 10.25   |
-| ```exiftool_verify_checksum``` |             | true    |
+|            Variable        | Description | Default |
+| -------------------------- | ----------- | ------- |
+| `exiftool_version`         |             | 10.25   |
+| `exiftool_verify_checksum` |             | true    |
 
 # Dependencies
 
@@ -21,9 +21,11 @@ None.
 
 # Example Playbook
 
-    - hosts: servers
-      roles:
-         - { role: danielhoherd.exiftool }
+```
+- hosts: servers
+  roles:
+    - { role: danielhoherd.exiftool }
+```
 
 # License
 
