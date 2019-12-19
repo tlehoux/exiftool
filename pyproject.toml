@@ -1,21 +1,25 @@
 [tool.poetry]
-name = "ansible-role-exiftool"
+name = "exiftool"
 version = "0.1.0"
 description = "Role to install ExifTool."
 authors = ["Thomas Lehoux, Daniel Hoherd"]
 
 [tool.poetry.dependencies]
 python = "^3.5"
+ansible = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
+pre-commit = "^1.20.0"
+testinfra = "^3.3.0"
+docker = "^4.1.0"
+molecule = "^2.22"
 
-[build-system]
-requires = ["poetry>=1.0.0"]
-build-backend = "poetry.masonry.api"
-
-# https://github.com/ambv/black#configuration-format
 [tool.black]
 line-length = 132
 target-version = ['py36', 'py37', 'py38']
 include = '\.pyi?$'
 exclude = '(venv|.vscode)'
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
