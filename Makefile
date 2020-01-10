@@ -26,6 +26,6 @@ test-bionic: requirements ## Run tests on bionic
 .PHONY: requirements
 requirements: .requirements ## Install software requirements
 .requirements:
-	pip3 install --user --upgrade "poetry>=1.0.0"
+	pip3 install --user --upgrade "poetry>=1.0.2"
 	poetry install
 	touch .requirements
