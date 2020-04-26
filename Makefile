@@ -23,9 +23,13 @@ test-xenial: requirements ## Run tests on xenial
 test-bionic: requirements ## Run tests on bionic
 	poetry run molecule test -s bionic
 
+.PHONY: test-bionic
+test-focal: requirements ## Run tests on focal
+	poetry run molecule test -s focal
+
 .PHONY: requirements
 requirements: .requirements ## Install software requirements
 .requirements:
-	pip3 install --user --upgrade "poetry>=1.0.2"
+	pip3 install --user --upgrade "poetry>=1.0.5"
 	poetry install
 	touch .requirements
