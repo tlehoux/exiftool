@@ -34,7 +34,7 @@ None.
 - name: exiftool
   scm: git
   src: git@github.com:danielhoherd/ansible-role-exiftool.git
-  version: f0c29e7fee1f1728c5c56cf54a9e623d2041129e
+  version: 43f5f894d42cbaf722299a7fb85b57f64181eb69
 ```
 
 # License
