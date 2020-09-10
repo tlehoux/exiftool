@@ -1,11 +1,11 @@
 ---
 repos:
   - repo: https://github.com/psf/black
-    rev: 19.10b0
+    rev: 20.8b1
     hooks:
       - id: black
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.5.0
+    rev: v3.2.0
     hooks:
       - id: check-case-conflict
       - id: check-json
@@ -23,12 +23,12 @@ repos:
     hooks:
       - id: shell-lint
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.1.7
+    rev: v1.1.9
     hooks:
       - id: remove-tabs
         exclude_types: [makefile]
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.23.0
+    rev: v1.24.2
     hooks:
       - id: yamllint
   - repo: https://github.com/kadrach/pre-commit-gitlabci-lint
@@ -36,9 +36,10 @@ repos:
     hooks:
       - id: gitlabci-lint
   - repo: https://github.com/danielhoherd/pre-commit-hooks
-    rev: 71f4ec08999cc9f2146a0067748dba5f38168c06
+    rev: 07f5a00b0f7d7856d602baf5e530a4d4472d7bf3
     hooks:
       - id: CVE-2017-18342
+      - id: remove-unicode-zero-width-space
       - id: remove-en-dashes
       - id: remove-unicode-non-breaking-spaces
       - id: remove-unicode-zero-width-non-breaking-spaces
