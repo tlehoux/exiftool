@@ -1,6 +1,6 @@
 ---
 # defaults file for danielhoherd.exiftool
-exiftool_version: "11.85"
+exiftool_version: "12.00"
 exiftool_binary_name: Image-ExifTool-{{ exiftool_version }}
-exiftool_download_url: http://www.sno.phy.queensu.ca/~phil/exiftool/{{ exiftool_binary_name }}.tar.gz
+exiftool_download_url: https://exiftool.org/{{ exiftool_binary_name }}.tar.gz
 exiftool_verify_checksum: false

@@ -1,13 +1,6 @@
 ---
 # vars file for danielhoherd.exiftool
-# release history: https://www.sno.phy.queensu.ca/~phil/exiftool/history.html
-
-# set -e
-# for X in {86..95} ; do
-#   file="Image-ExifTool-11.$X.tar.gz"
-#   wget -q https://exiftool.org/$file
-#   echo "11.$X: $(sha1sum "$file" | awk '{print $1}')  # $(stat -c "%y" "$file" | awk '{print $1}')"
-# done
+# release history: https://exiftool.org/history.html
 
 # release.number: sha1sum
 exiftool_checksums:
@@ -40,3 +33,14 @@ exiftool_checksums:
   11.94: 73f0663cc0c892acfc030d97a2ae91058eb4da69  # 2020-04-17
   11.95: 563d9f7a7046a44eb2124b502b38750a881515e7  # 2020-04-23
   11.96: 01b3709707716358432c1c3340744bded85ea2b9  # 2020-04-24
+  11.97: 506b69e35c3d00584700e2bb6015d8d4534df37f  # 2020-04-27
+  11.98: 4937ddc463883e75f488eec695b0dffe9dde0b86  # 2020-05-01
+  11.99: b41621c41d37033ef74aac56a7157b495a2ff984  # 2020-05-11
+  12.00: 17ca846f940d57069288408301a3aedcc7b71a15  # 2020-06-11 production
+  12.01: 140f014e7686ed80528b919d64c4de0a869e59aa  # 2020-06-24
+  12.02: d4189a991ca3dd12ffe002d21b0bc5881cac697e  # 2020-07-27
+  12.03: de4ec392ed9853fed91dbc35dab13fc3f88f7e53  # 2020-07-29
+  12.04: b94ac1d33a9d3560e10e21c9064d3245e49efa42  # 2020-08-10
+  12.05: 7b96b1e5286f5736a16732358e6d263cf4377893  # 2020-08-24
+  12.06: 40217757c8f21733073f55fb58b520588fe28fee  # 2020-09-11
+  12.07: 3e48982d37dadff387e779cba55f264d975a249c  # 2020-10-02

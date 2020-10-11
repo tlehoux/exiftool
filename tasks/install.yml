@@ -18,7 +18,7 @@
 
   - name: download exiftool archive
     get_url:
-      url: http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-{{ exiftool_version }}.tar.gz
+      url: https://exiftool.org/Image-ExifTool-{{ exiftool_version }}.tar.gz
       dest: /tmp
       checksum: "{{ exiftool_checksum|default(omit) }}"
 

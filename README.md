@@ -2,7 +2,7 @@
 
 <https://galaxy.ansible.com/danielhoherd/ansible-role-exiftool/>
 
-This is an Ansible role to install ExifTool (http://www.sno.phy.queensu.ca/~phil/exiftool/)
+This is an Ansible role to install ExifTool (<https://exiftool.org>)
 
 # Requirements
 
@@ -48,5 +48,5 @@ BSD
 
 # Links
 
-- Exiftool homepage: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
-- Exiftool release notes: <https://www.sno.phy.queensu.ca/~phil/exiftool/history.html>
+- Exiftool homepage: <https://exiftool.org>
+- Exiftool release notes: <https://exiftool.org/history.html>
