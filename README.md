@@ -1,6 +1,6 @@
 # ExifTool
 
-<https://galaxy.ansible.com/danielhoherd/exiftool/>
+<https://galaxy.ansible.com/danielhoherd/ansible-role-exiftool/>
 
 This is an Ansible role to install ExifTool (<https://exiftool.org>)
 
@@ -24,7 +24,7 @@ None.
 ```yml
 - hosts: servers
   roles:
-    - { role: danielhoherd.exiftool }
+    - { role: danielhoherd.ansible-role-exiftool }
 ```
 
 # Example requirements.yml
@@ -33,7 +33,7 @@ None.
 ---
 - name: exiftool
   scm: git
-  src: git@github.com:danielhoherd/exiftool.git
+  src: git@github.com:danielhoherd/ansible-role-exiftool.git
   version: 43f5f894d42cbaf722299a7fb85b57f64181eb69
 ```
 

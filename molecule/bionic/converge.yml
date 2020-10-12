@@ -2,4 +2,4 @@
 - name: Converge
   hosts: all
   roles:
-    - role: exiftool
+    - role: ansible-role-exiftool
