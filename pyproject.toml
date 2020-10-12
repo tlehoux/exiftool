@@ -13,6 +13,7 @@ pre-commit = "^2.7.1"
 testinfra = "^5.3.1"
 docker = "^4.3.1"
 molecule = "^3.0.8"
+pytest = "^6.1.1"
 
 [tool.black]
 line-length = 132
