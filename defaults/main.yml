@@ -1,6 +1,6 @@
 ---
 # defaults file for danielhoherd.exiftool
-exiftool_version: "12.00"
+exiftool_version: "12.16"
 exiftool_binary_name: Image-ExifTool-{{ exiftool_version }}
 exiftool_download_url: https://exiftool.org/{{ exiftool_binary_name }}.tar.gz
 exiftool_verify_checksum: false
